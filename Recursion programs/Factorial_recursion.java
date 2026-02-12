@@ -1,3 +1,9 @@
+/*
+Program: Factorial using recursion
+Concept: Basic Recursion
+Author: Fahim
+Class: 11
+*/
 import java.util.*;
 public class Factorial_recursion {
 
