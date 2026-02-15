@@ -1,6 +1,6 @@
-//reverse a permutation
+//reverse_a_permutation
 import java.util.*;
-public class Solution2193B {
+public class reverse_a_permutation {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int a=in.nextInt();

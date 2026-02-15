@@ -1,6 +1,6 @@
 //A - Ultra-Fast Mathematician
 import java.util.*;
-public class Solution61A {
+public class Ultra_fast_Mathematician {
     public static void main(String args[])
     {
        Scanner in = new Scanner(System.in);

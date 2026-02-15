@@ -1,6 +1,6 @@
 //Friendly numbers
 import java.util.*;
-public class Solution2197A {
+public class Friendly_numbers {
     public static void main(String args[])
     {
         Scanner in = new Scanner(System.in);
