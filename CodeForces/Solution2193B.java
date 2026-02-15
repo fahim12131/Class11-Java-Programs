@@ -1,10 +1,12 @@
+//reverse a permutation
 import java.util.*;
 public class Solution2193B {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int r = in.nextInt();             //taking range of the input
-        int max,tempj=0;
-        int j;
+        int a=in.nextInt();
+        int r,max,tempj=0,j;
+        for(int b=1;b<=a;b++){
+        r = in.nextInt();             //taking range of the input
         int arr[] = new int[r];
         for(int i=0;i<r;i++)              //taking input array
             arr[i] = in.nextInt();
@@ -30,6 +32,6 @@ public class Solution2193B {
             break;
             }
         }
-     
+    }
     }
 }

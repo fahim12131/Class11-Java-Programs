@@ -1,3 +1,4 @@
+//Friendly numbers
 import java.util.*;
 public class Solution2197A {
     public static void main(String args[])

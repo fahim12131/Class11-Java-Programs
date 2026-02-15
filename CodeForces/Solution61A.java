@@ -1,3 +1,4 @@
+//A - Ultra-Fast Mathematician
 import java.util.*;
 public class Solution61A {
     public static void main(String args[])
