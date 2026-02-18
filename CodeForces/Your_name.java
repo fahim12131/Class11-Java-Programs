@@ -26,6 +26,7 @@ public class Your_name
         int ttc=in.nextInt();
         while(ttc-->0)
         {
+            @SuppressWarnings("unused")
             int n=in.nextInt();
             char[] ar1 = in.next().toCharArray();
             char[] ar2 = in.next().toCharArray();
