@@ -13,17 +13,20 @@ public class String_modification {
         {
             str=str.substring(0,str.length()-1);
             String[] st = str.split(" ");
-            for (String st1 : st) {
-                if (st1.charAt(0) == 'A' || st1.charAt(0) == 'E' || st1.charAt(0) == 'I' || st1.charAt(0) == 'O' || st1.charAt(0) == 'U') {
-                    for (int j = st1.length() - 1; j>=0; j--) {
-                        System.out.print(st1.charAt(j));
-                    }
+            for(int i=0;i<st.length;i++)
+            {
+                if(st[i].charAt(0)=='A'|| st[i].charAt(0)=='E'||st[i].charAt(0)=='I'||st[i].charAt(0)=='O'||st[i].charAt(0)=='U')
+                {
+                    for(int j=st[i].length()-1;j>=0;j--)
+                        System.out.print(st[i].charAt(j));
                     System.out.print(" ");
-                } else {
-                    for (int j = 90; j>=65; j--) {
-                        if (st1.indexOf((char)j) != -1) {
+                }
+                else
+                {
+                    for(int j=90;j>=65;j--)
+                    {
+                        if(st[i].indexOf((char)j)!=-1)
                             System.out.print((char)j);
-                        }
                     }
                     System.out.print(" ");
                 }
