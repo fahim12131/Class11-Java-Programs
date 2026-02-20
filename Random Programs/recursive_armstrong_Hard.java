@@ -1,29 +1,14 @@
 //371 = 3^3 + 7^3 + 1^3 
 import java.util.*;
 public class recursive_armstrong_Hard {
-    public static boolean check(int a,int temp,int temp2,int n,int sum)
+    public static boolean check(int x, int n, int dig) //pass (n, n, (""+n).length())
     {
-        if(a==temp)
-        {
-            while(temp2>0)
-            {
-                n++;
-                temp2/=10;
-            }
-        }
-        if(temp==0 && a==sum) return true;
-        else if(temp==0 && a!=sum) return false;
-        else
-        {
-            sum=sum+(int)Math.pow(temp%10,n);
-            return check(a,temp/10,temp2,n,sum);
-        }
-
+        return x == 0 ? n == 0 : check(x/10, ((int)(n - Math.pow(x%10, dig))), dig);
     }
     public static void main(String args[])
     {
         Scanner in = new Scanner(System.in);
         int n=in.nextInt();
-        System.out.println(check(n,n,n,0,0));
+        System.out.println(check(n, n, (""+n).length()));
     }
 }
